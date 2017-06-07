@@ -13,3 +13,5 @@ project = SAAS AND issuetype = Bug AND issuetype != 需求（慧云） AND statu
 
 
 project = SAAS AND issuetype in (Bug, 需求（慧云）) AND status in (Open, Reopened, Fixing, DelayResolved, Resolve) AND component in (EMPTY, AR-应收, CMM-共同参数, CRM-个人法人, CRS-中央Order, FIN-收银, HK-客房, POS-餐饮, RPT-报表, RSV-预订) AND created >= -7d ORDER BY summary ASC, priority DESC, updated DESC
+
+project = SAAS AND issuetype = Bug AND status in (Open, Reopened, Fixing, Resolve) AND component in (EMPTY, AR-应收, CMM-共同参数, CRM-个人法人, CRS-中央Order, FIN-收银, HK-客房, POS-餐饮, RPT-报表, RSV-预订) AND BUG等级 = 1级 AND created >= -7d ORDER BY summary ASC, assignee DESC, priority DESC, updated DESC
